@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<project name="Date" basedir="." default="todo">
+<project name="Sentencias de control" basedir="." default="todo">
     <property name="src" value="src"/>
     <property name="classes" value="classes"/>
     <property name="conf" value="etc"/>
