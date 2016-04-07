@@ -8,19 +8,18 @@ public class Date{
 		StringBuffer msg = new StringBuffer("");
 		if(day<0||day>31){
 			msg.append()="Error, the day isn´t between 0 and 31. The wrong day :"+day+"\n";
-			if(month<0||month>12){
-				msg.append()="Error, the month isn´t between 0 and 12. The wrong month :"+month+"\n";
-				if(year<0){
-				msg.append()="Error, the year is negative. The wrong month :"+year+"\n";
-				}
-			}
+		}if(month<0||month>12){
+			msg.append()="Error, the month isn´t between 0 and 12. The wrong month :"+month+"\n";
+		}if(year<0){
+			msg.append()="Error, the year is negative. The wrong year :"+year+"\n";
+		}if(msg.length()!=0){
+			throw new DateException(msg.toString());
 		}else{
-			if(msg.length()==0){
-				this.day=day;
-				this.month=month;
-				this.year=year;
-			}
+			this.day=day;
+			this.month=month;
+			this.year=year;
 		}
+		
 	}
 	
 	int getDay(){
