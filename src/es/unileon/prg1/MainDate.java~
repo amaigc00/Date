@@ -5,6 +5,7 @@ public class MainDate{
 			Date today = new Date(31,12,2016);
 			Date tomorrow = new Date(05,04,2016);
 			today.isSame(tomorrow);
+			System.out.println(today.dayOfTheWeek());
 		}catch(DateException e){
 			System.err.println(e.getMessage());
 		}
